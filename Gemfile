@@ -7,6 +7,10 @@ ruby '2.6.3'
 gem 'rails', '~> 6.0.2', '>= 6.0.2.1'
 # add has to passwords
 gem 'bcrypt'
+# ability to seed database with fake users
+gem 'faker'
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
 # bootstrap for css styling
 gem 'bootstrap-sass'
 # Use Puma as the app server
