@@ -6,8 +6,8 @@ class UsersController < ApplicationController
   require 'will_paginate/array'
 
   def index
-    # @users = User.paginate(page: params[:page])
-    @users = User.where(activated: true).paginate(page: params[:page])
+    @users = User.paginate(page: params[:page])
+    # @users = User.where(activated: true).paginate(page: params[:page])
   end
 
   def show
