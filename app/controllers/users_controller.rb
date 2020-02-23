@@ -31,6 +31,7 @@ class UsersController < ApplicationController
       puts "UserController::create - after sending activation email"
       flash[:info] = "Please check your email to activate your account."
       puts "UserController::create - after flash"
+      puts "UserController::create  root_url: #{root_url.inspect}"
       redirect_to root_url
     else
       render 'new'
